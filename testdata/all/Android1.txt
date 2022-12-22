@@ -1,0 +1,28 @@
+
+[LOCATORS]
+camera == com.google.android.googlequicksearchbox:id/eyes_button
+micro == com.google.android.googlequicksearchbox:id/logo_view
+
+[testcase1]
+wait, null, 5000 , null
+
+// send key Enter
+KEY, null, RETURN, null
+
+// click micro
+null, micro, GET, null
+
+wait, null, 5000 , null
+
+// send key Enter
+KEY, null, RETURN, null
+
+wait, null, 5000 , null
+
+// click micro
+null, camera, GET, null
+
+[COMMANDS]
+testcase1
+
+[END]

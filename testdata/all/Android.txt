@@ -1,0 +1,30 @@
+
+[LOCATORS]
+mainElement == ecor_content_parent
+button1 == button
+checkBox == android.widget.CheckBox
+thirdButton == //*[@resource-id='com.example.android.apis:id/button']
+
+[testcase1]
+// click 
+wait, null, 20000 , null
+//null, mainElement, null, null
+
+wait, null, 2000 , null
+null, button1, null, null
+
+wait, null, 2000 , null
+null, checkBox, null, null
+
+wait, null, 2000 , null
+null, thirdButton, null, null
+
+wait, null, 2000 , null
+
+wait, null, 5000 , null
+
+
+[COMMANDS]
+testcase1
+
+[END]
